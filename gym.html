@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Registration</title>
+    <link rel="stylesheet" href="gym.css">
+</head>
+<body>
+    <div class="form">
+        <h1>Gym Registration Form</h1>
+        
+        <form>
+            <div class="form-group">
+                <label >Full Name</label>
+                <input type="text"  name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label >Email</label>
+                <input type="email"  name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label >Phone Number</label>
+                <input type="tel" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label >Date of Birth</label>
+                <input type="date"  name="dob" required>
+            </div>
+            <div class="form-group">
+                <label >Gender</label>
+                <select  name="gender" required>
+                    <option value="" >Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label >Membership Type</label>
+                <select  name="membership" required>
+                    <option value="" disabled selected>Select membership</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label >Additional Notes</label>
+                <textarea  name="comments" rows="4" placeholder="Enter any Note (Optional)"></textarea>
+            </div>
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</body>
+</html>
